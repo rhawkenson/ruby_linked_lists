@@ -64,12 +64,26 @@ class LinkedList
 
   def contains?(value)
     current = @head
-    until current.value == value 
+    
+    until current == nil 
+      return true if current.value == value 
       current = current.next_node
     end 
+    false 
   end 
 
+  def find(value)
+    current = @head 
+    counter = 0 
+    until current == nil 
+      return counter if current.value == value 
+      current = current.next_node
+      counter += 1
+    end
+    nil
+  end 
 
+  
 
 end 
 
