@@ -83,6 +83,19 @@ class LinkedList
     nil
   end 
 
+  def to_s
+    current = @head
+    arr = [] 
+
+    size.times do
+      arr << current.value
+      current = current.next_node
+    end 
+    arr.each do |x|
+      print "(#{x})->"
+    end 
+    print "nil\n"
+  end 
   
 
 end 
