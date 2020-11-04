@@ -1,4 +1,9 @@
-require './linked_list.rb'
+require './linked_lists.rb'
 
-six = LinkedList.new(6)
-six.append
+list = LinkedList.new
+list.append(6)
+list.append(7)
+list.prepend(4)
+list.prepend(10)
+
+p list.contains?(10)
