@@ -113,7 +113,17 @@ class LinkedList
     end 
   end 
 
-  
+  def delete_at(index)
+    current = @head 
+    counter = 0
+    until current == nil 
+      if counter == index - 1
+        current.next_node = current.next_node.next_node
+      end 
+      current = current.next_node
+      counter += 1
+    end
+  end 
 
 
 end 

@@ -6,8 +6,12 @@ list.append(7)
 list.prepend(4)
 list.prepend(10)
 
+
+list.insert_at(5,1)
 p list 
 puts "\n\n"
-list.insert_at(5,1)
+
+list.delete_at(1)
+
 p list 
 puts "\n\n"
